@@ -9,7 +9,7 @@ export default {
     extend: {
       container: {
         center: true,
-        padding: "16px"
+        padding: "20px"
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],

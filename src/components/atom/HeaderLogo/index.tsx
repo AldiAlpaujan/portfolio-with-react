@@ -24,7 +24,7 @@ const HeaderLogo = () => {
     <div className="flex flex-col items-center">
       <h1
         ref={h1Ref}
-        className="text-lg md:text-xl text-center font-bold text-gradient transition-all duration-300"
+        className="cursor-pointer text-lg md:text-xl text-center font-bold text-gradient transition-all duration-300"
       >
         {"<ALDI ALPAUJAN />"}
       </h1>

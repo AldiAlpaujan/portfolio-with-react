@@ -1,0 +1,51 @@
+.burger-menu {
+  @apply relative h-[30px] w-[30px] bg-transparent;
+}
+
+/* ==== Burger Menu Active ==== */
+
+.burger-menu-active > span:nth-child(1) {
+  @apply w-full;
+}
+
+.burger-menu-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.burger-menu-active > span:nth-child(3) {
+  @apply w-full;
+}
+
+/* ==== Rotate Burger Menu ==== */
+
+.rotate-menu-active > span:nth-child(1) {
+  @apply origin-right -rotate-[45deg] mt-[3px];
+}
+
+.rotate-menu-active > span:nth-child(3) {
+  @apply origin-right rotate-[45deg] mb-[3px];
+}
+
+/* ==== Burger Menu Line Active Color ==== */
+
+.burger-line-active-color > span {
+  @apply bg-white;
+}
+
+/* ==== Burger Menu Line ==== */
+
+.burger-line {
+  @apply absolute h-[2px] bg-light-title ease-in-out transition-all duration-300;
+}
+
+.burger-line:nth-child(1) {
+  @apply w-1/2 left-0 top-0 mt-1;
+}
+
+.burger-line:nth-child(2) {
+  @apply w-full right-0;
+}
+
+.burger-line:nth-child(3) {
+  @apply w-1/2 right-0 bottom-0 mb-1;
+}

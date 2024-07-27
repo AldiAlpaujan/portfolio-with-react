@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-inter bg-light-background;
+}
+
+.text-light-subtitle {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#484E53];
+}
+
+.text-dark-subtitle {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#FFFFFF];
+}

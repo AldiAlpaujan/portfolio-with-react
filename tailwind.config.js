@@ -12,7 +12,7 @@ export default {
         padding: "16px"
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         primary: "#4FC3F7",

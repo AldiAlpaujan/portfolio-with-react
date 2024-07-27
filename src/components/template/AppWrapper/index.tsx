@@ -1,4 +1,5 @@
 import BurgerMenuContextProvider from "../../../context/BurgerMenuContext";
+import ThemeContextProvider from "../../../context/ThemeContext";
 import Header from "../../organism/Header";
 import MobileMenu from "../../organism/MobileMenu";
 
@@ -10,13 +11,15 @@ const AppWrapper = (props: AppWrapperProps) => {
   const { children } = props;
   return (
     <>
-      <BurgerMenuContextProvider>
-        <Header />
-        <main className="pt-20 md:pt-[80px] lg:pt-[92px]">
-          {children}
-        </main>
-        <MobileMenu />
-      </BurgerMenuContextProvider>
+      <ThemeContextProvider>
+        <BurgerMenuContextProvider>
+          <Header />
+          <main className="pt-20 md:pt-[80px] lg:pt-[92px]">
+            {children}
+          </main>
+          <MobileMenu />
+        </BurgerMenuContextProvider>
+      </ThemeContextProvider>
     </>
   )
 }

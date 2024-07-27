@@ -1,16 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply font-inter bg-light-background;
-}
-
-.text-light-subtitle {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#484E53];
-}
-
-.text-dark-subtitle {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#FFFFFF];
+  @apply font-Montserrat bg-light-background dark:bg-dark-background transition-all duration-300;
 }

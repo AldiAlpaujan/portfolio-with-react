@@ -1,0 +1,4 @@
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#484E53] 
+  dark:bg-gradient-to-r dark:from-[#4FC3F7] dark:to-[#FFFFFF];
+}

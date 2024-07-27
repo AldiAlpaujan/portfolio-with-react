@@ -20,7 +20,7 @@ const BurgerMenuContextProvider = ({ children }: { children: React.ReactNode }) 
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1024) {
         setIsOpen(false);
       }
     });

@@ -10,7 +10,7 @@ import { IconDark } from "../../atom/icons/icon-dark";
 const Header = () => {
   return (
     <nav className="bg-transparent w-full fixed z-10">
-      <div className="container py-4 flex justify-between items-center">
+      <div className="container h-[70px] md:h-[80px] flex justify-between items-center">
         <HeaderLogo />
         <Menu />
         <Action />

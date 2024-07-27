@@ -14,7 +14,7 @@ const AppWrapper = (props: AppWrapperProps) => {
       <ThemeContextProvider>
         <BurgerMenuContextProvider>
           <Header />
-          <main className="pt-20 md:pt-[80px] lg:pt-[92px]">
+          <main className="pt-[71px] md:pt-[81px]">
             {children}
           </main>
           <MobileMenu />

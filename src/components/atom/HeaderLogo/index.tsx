@@ -16,7 +16,7 @@ const HeaderLogo = () => {
       setTimeout(() => {
         h1Ref.current?.classList.remove("text-white");
         h1Ref.current?.classList.add("text-gradient");
-      }, 1000);
+      }, 1300);
     }
   }, [isOpen]);
 

@@ -52,13 +52,13 @@ const Overlay = () => {
   return (
     <>
       <div
-        className={`overlay bg-opacity-50 ${showOverlay ? "bottom-0" : "top-0"}`}
+        className={`overlay bg-opacity-50 ${!showOverlay && "delay-200"} ${showOverlay ? "bottom-0" : "top-0"}`}
         style={{
           height: showOverlay ? "100%" : "0",
         }}
       />
       <div
-        className={`overlay bg-opacity-50 delay-200 ${showOverlay ? "bottom-0" : "top-0"}`}
+        className={`overlay ${showOverlay && "delay-200"} ${showOverlay ? "bottom-0" : "top-0"}`}
         style={{
           height: showOverlay ? "100%" : "0",
         }}

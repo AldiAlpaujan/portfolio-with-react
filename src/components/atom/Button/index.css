@@ -1,0 +1,17 @@
+.button {
+  @apply py-[8px] px-[26px] xl:py-[12px] border-2;
+}
+
+.button-primary {
+  @apply text-base font-medium tracking-wide border-light-title rounded-lg
+      hover:text-white hover:bg-primary hover:border-primary hover:shadow-lg
+      dark:border-primary dark:text-white dark:hover:bg-transparent dark:hover:border-primary 
+      transition-all duration-200;
+}
+
+.button-secondary {
+}
+
+.button-mobile-menu {
+  @apply text-white font-medium border-white rounded-lg;
+}

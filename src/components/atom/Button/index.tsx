@@ -1,16 +1,25 @@
+import "./index.css";
+
 interface ButtonProps {
   children: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
+  type?: "primary" | "secondary" | "mobile-menu-button";
 }
 
-const Button = ({ children }: ButtonProps) => {
+const Button = ({ children, style, type, className }: ButtonProps) => {
+  let buttonType = "button-primary";
+  if (type === "primary") {
+    buttonType = "button-primary";
+  } else if (type === "secondary") {
+    buttonType = "button-secondary";
+  } else if (type === "mobile-menu-button") {
+    buttonType = "button-mobile-menu";
+  }
   return (
-    <button className="
-      py-[8px] px-[26px] xl:py-[12px] text-base font-medium tracking-wide border-light-title border-2 rounded-lg
-      hover:text-white hover:bg-primary hover:border-primary hover:shadow-lg
-      dark:border-primary dark:text-white
-      dark:hover:bg-transparent dark:hover:border-primary
-      transition-all duration-200
-    ">
+    <button
+      style={style}
+      className={`button ${buttonType} ${className}`}>
       {children}
     </button>
   );

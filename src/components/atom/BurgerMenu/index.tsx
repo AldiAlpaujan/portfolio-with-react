@@ -32,7 +32,7 @@ const BurgerMenu = ({ className }: BurgerMenuProps) => {
       }, 200);
       setTimeout(() => {
         btnRef.current?.classList.remove("burger-line-active-color");
-      }, 400);
+      }, 1000);
     }
     setTimeout(() => {
       setIsAnimation(false);

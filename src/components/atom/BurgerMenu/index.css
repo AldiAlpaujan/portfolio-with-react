@@ -35,7 +35,7 @@
 /* ==== Burger Menu Line ==== */
 
 .burger-line {
-  @apply absolute h-[2px] bg-light-title rounded-lg dark:bg-white ease-in-out transition-all duration-300;
+  @apply absolute h-[2px] bg-light-title rounded-lg dark:bg-white ease-in-out transition-all duration-500;
 }
 
 .burger-line:nth-child(1) {

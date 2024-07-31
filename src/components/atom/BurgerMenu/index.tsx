@@ -21,22 +21,22 @@ const BurgerMenu = ({ className }: BurgerMenuProps) => {
       btnRef.current?.classList.add("burger-menu-active");
       setTimeout(() => {
         btnRef.current?.classList.add("rotate-menu-active");
-      }, 200);
+      }, 400);
       setTimeout(() => {
         btnRef.current?.classList.add("burger-line-active-color");
-      }, 200);
+      }, 300);
     } else {
       btnRef.current?.classList.remove("rotate-menu-active");
       setTimeout(() => {
         btnRef.current?.classList.remove("burger-menu-active");
-      }, 200);
+      }, 400);
       setTimeout(() => {
         btnRef.current?.classList.remove("burger-line-active-color");
-      }, 1000);
+      }, 1500);
     }
     setTimeout(() => {
       setIsAnimation(false);
-    }, 700);
+    }, 1000);
   }, [isOpen]);
 
   return (

@@ -5,7 +5,7 @@
 .button-primary {
   @apply text-base font-medium tracking-wide border-light-title rounded-lg
       hover:text-white hover:bg-primary hover:border-primary hover:shadow-lg
-      dark:border-primary dark:text-white dark:hover:bg-transparent dark:hover:border-primary 
+      dark:border-primary dark:text-white dark:hover:bg-primary dark:hover:border-primary 
       transition-all duration-200;
 }
 

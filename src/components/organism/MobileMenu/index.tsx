@@ -5,10 +5,10 @@ import "./index.css";
 
 const MobileMenu = () => {
   return (
-    <>
+    <div className="lg:hidden">
       <Overlay />
       <Menu />
-    </>
+    </div>
   );
 };
 

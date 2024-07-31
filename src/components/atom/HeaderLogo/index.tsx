@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useRef } from "react";
 import { BurgerMenuContext } from "../../../context/BurgerMenuContext";
 import "./index.css";
@@ -5,6 +6,7 @@ import "./index.css";
 const HeaderLogo = () => {
   const h1Ref = useRef<HTMLHeadingElement>(null);
   const { isOpen } = useContext(BurgerMenuContext)!;
+  const logo = "<ALDI ALPAUJAN />";
 
   useEffect(() => {
     if (isOpen) {
@@ -22,11 +24,11 @@ const HeaderLogo = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1
-        ref={h1Ref}
-        className="cursor-pointer text-lg md:text-xl text-center font-bold text-gradient transition-all duration-300"
-      >
-        {"<ALDI ALPAUJAN />"}
+      <h1 ref={h1Ref} className="lg:hidden logo transition-all duration-300">
+        {logo}
+      </h1>
+      <h1 className="hidden lg:block logo transition-all duration-300">
+        {logo}
       </h1>
     </div>
   );

@@ -15,7 +15,8 @@ export default {
         Montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#4FC3F7",
+        primary: "#6C63FF",
+        secondary: "#6C63FF",
         light: {
           title: "#484E53",
           body: "#484E53",

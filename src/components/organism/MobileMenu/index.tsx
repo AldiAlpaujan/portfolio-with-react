@@ -5,30 +5,36 @@ import "./index.css";
 
 const MobileMenu = () => {
   return (
-    <>
+    <div className="lg:hidden">
       <Overlay />
       <Menu />
-    </>
+    </div>
   );
 };
 
 const Menu = () => {
   const divRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
   const { isOpen } = useContext(BurgerMenuContext)!;
 
   useEffect(() => {
     if (isOpen) {
       divRef.current?.classList.remove("hidden");
+      setTimeout(() => {
+        headerRef.current?.classList.remove("hidden");
+      }, 800);
     } else {
+      headerRef.current?.classList.add("hidden");
       setTimeout(() => {
         divRef.current?.classList.add("hidden");
-      }, 800);
+      }, 1000);
     }
   }, [isOpen]);
 
   return (
-    <div ref={divRef} className="hidden w-full h-full fixed top-0">
-      <div className={`container pt-[91px] md:pt-[101px]`}>
+    <div ref={divRef} className="hidden overflow-auto w-full h-full fixed top-0">
+      <div ref={headerRef} className="hidden fixed h-[70px] md:h-[80px] w-full bg-primary z-10" />
+      <div className={`container h-full pt-[70px] md:pt-[80px]`}>
         <HeaderMenu type="mobile" />
       </div>
     </div>
@@ -45,7 +51,7 @@ const Overlay = () => {
     } else {
       setTimeout(() => {
         setShowOverlay(false);
-      }, 800);
+      }, 1000);
     }
   }, [isOpen]);
 

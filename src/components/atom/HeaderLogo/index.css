@@ -1,4 +1,8 @@
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4FC3F7] to-[#484E53] 
-  dark:bg-gradient-to-r dark:from-[#4FC3F7] dark:to-[#FFFFFF];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#484E53] 
+  dark:bg-gradient-to-r dark:from-primary dark:to-[#FFFFFF];
+}
+
+.logo {
+  @apply cursor-pointer text-lg md:text-xl text-center font-bold text-gradient;
 }

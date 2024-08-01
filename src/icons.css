@@ -1,11 +1,11 @@
 @font-face {
   font-family: "portfolio";
-  src: url("./assets/icon/portfolio.eot?ewtiyd");
-  src: url("./assets/icon/portfolio.eot?ewtiyd#iefix")
+  src: url("./assets/icon/portfolio.eot?bc14sq");
+  src: url("./assets/icon/portfolio.eot?bc14sq#iefix")
       format("embedded-opentype"),
-    url("./assets/icon/portfolio.ttf?ewtiyd") format("truetype"),
-    url("./assets/icon/portfolio.woff?ewtiyd") format("woff"),
-    url("./assets/icon/portfolio.svg?ewtiyd#portfolio") format("svg");
+    url("./assets/icon/portfolio.ttf?bc14sq") format("truetype"),
+    url("./assets/icon/portfolio.woff?bc14sq") format("woff"),
+    url("./assets/icon/portfolio.svg?bc14sq#portfolio") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-github:before {
+  content: "\e902";
+  color: #484e53;
+}
+.ic-instagram:before {
+  content: "\e903";
+  color: #484e53;
+}
+.ic-linkedin:before {
+  content: "\e904";
+  color: #484e53;
+}
+.ic-whatsapp:before {
+  content: "\e905";
+  color: #484e53;
+}
 .ic-light:before {
   content: "\e900";
+}
+.ic-dark:before {
+  content: "\e901";
 }

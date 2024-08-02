@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 interface ProviderValue {
   activeMenu: string;
@@ -8,6 +8,10 @@ interface ProviderValue {
 const HeaderMenuContext = createContext<ProviderValue | null>(null);
 const HeaderMenuContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [activeMenu, setActiveMenu] = useState<string>("Home");
+
+  useEffect(() => {
+    document.getElementById(activeMenu)?.scrollIntoView({ behavior: "smooth" });
+  }, [activeMenu]);
 
   return (
     <HeaderMenuContext.Provider value={{ activeMenu, setActiveMenu }}>

@@ -1,8 +1,10 @@
+import PageWrapper from "../../components/template/PageWrapper";
+
 const About = () => {
   return (
-    <div className="container w-full h-[calc(100vh-100px)] flex items-center justify-center">
+    <PageWrapper id="About">
       ABOUT SECTION
-    </div>
+    </PageWrapper>
   );
 };
 

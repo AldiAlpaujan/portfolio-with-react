@@ -1,8 +1,10 @@
+import PageWrapper from "../../components/template/PageWrapper";
+
 const Service = () => {
   return (
-    <div className="container w-full h-[calc(100vh-100px)] flex items-center justify-center">
+    <PageWrapper id="Service">
       SERVICE SECTION
-    </div>
+    </PageWrapper>
   );
 };
 

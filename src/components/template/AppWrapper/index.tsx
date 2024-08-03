@@ -1,6 +1,7 @@
 import BurgerMenuContextProvider from "../../../context/BurgerMenuContext";
 import HeaderMenuContextProvider from "../../../context/HeaderMenuContext";
 import ThemeContextProvider from "../../../context/ThemeContext";
+import Footer from "../../organism/Footer";
 import Header from "../../organism/Header";
 import MobileMenu from "../../organism/MobileMenu";
 
@@ -16,9 +17,8 @@ const AppWrapper = (props: AppWrapperProps) => {
         <BurgerMenuContextProvider>
           <HeaderMenuContextProvider>
             <Header />
-            <main className="pt-[71px] md:pt-[81px] xl:pt-[93px]">
-              {children}
-            </main>
+            {children}
+            <Footer />
             <MobileMenu />
           </HeaderMenuContextProvider>
         </BurgerMenuContextProvider>

@@ -120,11 +120,13 @@ const Desktop = () => {
       <ul className="flex gap-7 xl:gap-10 2xl:gap-11">
         {menu.map((item) => (
           <li key={item.name} className={`
-            cursor-pointer ${item.name == activeMenu ? "text-secondary dark:text-primary font-semibold" : "text-black dark:text-[#C1C1C1]"} font-medium 
+            ${item.name == activeMenu ? "text-secondary dark:text-primary font-semibold" : "text-black dark:text-[#C1C1C1]"} font-medium 
             hover:font-semibold  hover:text-secondary dark:hover:text-primary 
             transition-all duration-300`}
           >
-            <a onClick={() => setActiveMenu(item.name)}>{item.name} </a>
+            <a className="cursor-pointer py-2" onClick={() => setActiveMenu(item.name)}>
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>

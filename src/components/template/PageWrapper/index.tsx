@@ -4,21 +4,25 @@ import { HeaderMenuContext } from "../../../context/HeaderMenuContext";
 
 interface PageWrapperProps {
   id: string;
+  className?: string;
   children: ReactNode;
 }
 
-const PageWrapper = ({ id, children }: PageWrapperProps) => {
-  const { setActiveMenu } = useContext(HeaderMenuContext)!;
+const PageWrapper = ({ id, className, children }: PageWrapperProps) => {
+  const { setActiveMenuWithOutNavigating, isNavigating } = useContext(HeaderMenuContext)!;
+
   const handleScroll = () => {
-    const scrollTop =
-      window.scrollY ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop;
-    const section = document.getElementById(id)!;
-    const startScroll = section.offsetTop;
-    // if (scrollTop > startScroll) {
-    //   setActiveMenu(id);
-    // }
+    if (isNavigating == false) {
+      const scrollTop =
+        window.scrollY ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      const section = document.getElementById(id)!;
+      const startScroll = section.offsetTop;
+      if (scrollTop > startScroll) {
+        setActiveMenuWithOutNavigating(id);
+      }
+    }
   };
 
   useEffect(() => {
@@ -26,10 +30,10 @@ const PageWrapper = ({ id, children }: PageWrapperProps) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isNavigating]);
 
   return (
-    <div id={id} className="container w-full h-[calc(100vh-100px)] flex items-center justify-center">
+    <div id={id} className={`container w-full h-screen flex items-center justify-center ${className}`}>
       {children}
     </div>
   );

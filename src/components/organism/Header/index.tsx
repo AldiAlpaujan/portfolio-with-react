@@ -12,7 +12,7 @@ const Header = () => {
 
   const handleScroll = () => {
     const navBar = navRef.current! as HTMLElement;
-    const offsetTop = navBar.offsetTop;
+    const offsetTop = navBar.offsetTop + 10;
     if (window.scrollY > offsetTop) {
       navBar.classList.add("navbar-fixed");
       setHasNavBar(true);

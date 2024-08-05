@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         primary: "#6C63FF",

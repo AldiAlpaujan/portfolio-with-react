@@ -19,7 +19,7 @@ const Button = ({ children, style, type, className }: ButtonProps) => {
   return (
     <button
       style={style}
-      className={`button ${buttonType} ${className}`}>
+      className={`font-Montserrat button ${buttonType} ${className}`}>
       {children}
     </button>
   );

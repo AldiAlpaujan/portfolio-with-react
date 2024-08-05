@@ -6,7 +6,7 @@ import "./index.css";
 const HeaderLogo = () => {
   const h1Ref = useRef<HTMLHeadingElement>(null);
   const { isOpen } = useContext(BurgerMenuContext)!;
-  const logo = "<ALDI ALPAUJAN />";
+  const logo = "<A.M.A/>";
 
   useEffect(() => {
     if (isOpen) {

@@ -10,6 +10,10 @@
 }
 
 .button-secondary {
+  @apply text-sm font-medium tracking-wide border-light-title rounded-full
+      hover:text-white hover:bg-primary hover:border-primary hover:shadow-lg
+      dark:border-primary dark:text-white dark:hover:bg-primary dark:hover:border-primary 
+      transition-all duration-200;
 }
 
 .button-mobile-menu {

@@ -1,5 +1,5 @@
 .button {
-  @apply py-[8px] px-[26px] xl:py-[12px] border-2;
+  @apply py-[8px] px-[26px] lg:py-[12px] border-2;
 }
 
 .button-primary {

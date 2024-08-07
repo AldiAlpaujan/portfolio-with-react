@@ -10,7 +10,6 @@
   font-style: normal;
   font-display: block;
 }
-
 [class^="ic-"],
 [class*=" ic-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -27,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-arrow-down:before {
+  content: "\e907";
+}
+.ic-arrow-top:before {
+  content: "\e908";
+}
+.ic-arrow-left:before {
+  content: "\e909";
+}
+.ic-arrow-right:before {
+  content: "\e90a";
+}
+.ic-location:before {
+  content: "\e906";
+}
 .ic-github:before {
   content: "\e902";
   color: #484e53;

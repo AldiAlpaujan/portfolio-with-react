@@ -5,9 +5,10 @@ interface ButtonProps {
   className?: string;
   style?: React.CSSProperties;
   type?: "primary" | "secondary" | "mobile-menu-button";
+  onClick?: () => void,
 }
 
-const Button = ({ children, style, type, className }: ButtonProps) => {
+const Button = ({ children, style, type, className, onClick }: ButtonProps) => {
   let buttonType = "button-primary";
   if (type === "primary") {
     buttonType = "button-primary";
@@ -18,6 +19,7 @@ const Button = ({ children, style, type, className }: ButtonProps) => {
   }
   return (
     <button
+      onClick={onClick}
       style={style}
       className={`font-Montserrat button ${buttonType} ${className}`}>
       {children}

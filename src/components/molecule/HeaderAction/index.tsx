@@ -6,7 +6,7 @@ const HeaderAction = () => {
   return (
     <>
       <BurgerMenu className="lg:hidden" />
-      <div className="hidden lg:flex gap-7 items-center">
+      <div className="hidden lg:flex gap-7 items-center w-[229px]">
         <ToggleThemeMode />
         <Button >Download CV</Button>
       </div>

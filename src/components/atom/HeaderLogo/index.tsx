@@ -23,7 +23,7 @@ const HeaderLogo = () => {
   }, [isOpen]);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="w-[229px] flex flex-col items-start">
       <h1 ref={h1Ref} className="lg:hidden logo transition-all duration-300">
         {logo}
       </h1>

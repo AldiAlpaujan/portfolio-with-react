@@ -20,12 +20,12 @@ body {
 }
 
 .section-subtitle {
-  @apply font-inter text-sm text-gradient font-semibold mb-4 md:text-lg;
+  @apply font-inter text-sm text-gradient font-semibold md:text-lg;
 }
 
 .section-description {
-  @apply font-inter max-w-lg text-sm font-medium text-center text-light-body dark:text-dark-body 
-  md:text-base md:max-w-xl lg:text-lg lg:max-w-2xl;
+  @apply font-inter max-w-2xl text-sm font-medium text-center text-light-body dark:text-dark-body 
+  md:text-base md:max-w-3xl lg:text-lg lg:max-w-4xl;
 }
 
 .pt-section {

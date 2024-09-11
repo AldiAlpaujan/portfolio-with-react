@@ -10,6 +10,7 @@
   font-style: normal;
   font-display: block;
 }
+
 [class^="ic-"],
 [class*=" ic-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -43,19 +44,15 @@
 }
 .ic-github:before {
   content: "\e902";
-  color: #484e53;
 }
 .ic-instagram:before {
   content: "\e903";
-  color: #484e53;
 }
 .ic-linkedin:before {
   content: "\e904";
-  color: #484e53;
 }
 .ic-whatsapp:before {
   content: "\e905";
-  color: #484e53;
 }
 .ic-light:before {
   content: "\e900";

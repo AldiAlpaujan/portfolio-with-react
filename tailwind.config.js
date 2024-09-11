@@ -23,11 +23,13 @@ export default {
           title: "#484E53",
           body: "#484E53",
           background: "#E0E8F6",
+          border: "#484E53",
         },
         dark: {
           title: "#FFFFFF",
           body: "#E1E1E1",
           background: "#1A1A1A",
+          border: "#484E53",
         },
       },
     },

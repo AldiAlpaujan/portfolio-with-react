@@ -2,7 +2,7 @@ import PageWrapper from "../../components/template/PageWrapper";
 
 const Contact = () => {
   return (
-    <PageWrapper id="Contact" className="pt-section">
+    <PageWrapper id="Contact" className="h-screen pt-section">
       <div className="flex flex-col items-center justify-center">
         <h1 className="section-title">
           Get In Touch

@@ -2,7 +2,7 @@ import PageWrapper from "../../components/template/PageWrapper";
 
 const Project = () => {
   return (
-    <PageWrapper id="Project" className="pt-section">
+    <PageWrapper id="Project" className="h-screen pt-section">
       <div className="flex flex-col items-center justify-center">
         <h1 className="section-title">
           Projects

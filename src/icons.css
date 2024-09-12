@@ -27,6 +27,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-service-3:before {
+  content: "\e900";
+}
+.ic-service-2:before {
+  content: "\e901";
+}
+.ic-service-6:before {
+  content: "\e902";
+}
+.ic-service-5:before {
+  content: "\e903";
+}
+.ic-service-4:before {
+  content: "\e904";
+}
+.ic-service-1:before {
+  content: "\e905";
+}
 .ic-arrow-down:before {
   content: "\e907";
 }
@@ -43,20 +61,20 @@
   content: "\e906";
 }
 .ic-github:before {
-  content: "\e902";
+  content: "\e90b";
 }
 .ic-instagram:before {
-  content: "\e903";
+  content: "\e90c";
 }
 .ic-linkedin:before {
-  content: "\e904";
+  content: "\e90d";
 }
 .ic-whatsapp:before {
-  content: "\e905";
+  content: "\e90e";
 }
 .ic-light:before {
-  content: "\e900";
+  content: "\e90f";
 }
 .ic-dark:before {
-  content: "\e901";
+  content: "\e910";
 }

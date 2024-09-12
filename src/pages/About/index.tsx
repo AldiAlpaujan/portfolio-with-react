@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import Button from "../../components/atom/Button";
 import PageWrapper from "../../components/template/PageWrapper";
+import { HeaderMenuContext } from "../../context/HeaderMenuContext";
 
 const About = () => {
+  const { setActiveMenu } = useContext(HeaderMenuContext)!;
+
   const data = {
     title: "About Me",
     subtitle: "Get to know me",
@@ -11,24 +16,6 @@ const About = () => {
     ],
   }
 
-  const socialMedia = [
-    {
-      "icon": "ic-whatsapp",
-      "title": "WhatsApp",
-    },
-    {
-      "icon": "ic-instagram",
-      "title": "Instagram",
-    },
-    {
-      "icon": "ic-github",
-      "title": "Github",
-    },
-    {
-      "icon": "ic-linkedin",
-      "title": "LinkedIn",
-    },
-  ];
 
   return (
     <PageWrapper id="About" className="flex items-center justify-center">
@@ -40,18 +27,9 @@ const About = () => {
             {e}
           </p>
         ))}
-        <div className="flex gap-4 mt-2">
-          {socialMedia.map((v, i) => (
-            <div key={i} className="cursor-pointer flex items-center gap-2 group">
-              <i className={`${v.icon} text-light-body text-[42px] dark:text-dark-body group-hover:text-primary transition-all duration-300`} />
-              <div className="w-0 group-hover:w-[80px] transition-all duration-150">
-                <p className="hidden group-hover:block">
-                  {v.title}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Button onClick={() => setActiveMenu("Service")} type="secondary" className="flex gap-2 items-center mt-4">
+          My Services
+        </Button>
       </div>
     </PageWrapper>
   );

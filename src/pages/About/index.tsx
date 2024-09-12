@@ -18,7 +18,7 @@ const About = () => {
 
 
   return (
-    <PageWrapper id="About" className="flex items-center justify-center">
+    <PageWrapper id="About" className="h-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <h1 className="section-title">{data.title}</h1>
         <h2 className="section-subtitle mb-4 lg:mb-6">{data.subtitle}</h2>

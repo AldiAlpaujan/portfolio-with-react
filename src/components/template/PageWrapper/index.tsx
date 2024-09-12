@@ -33,7 +33,7 @@ const PageWrapper = ({ id, className, children }: PageWrapperProps) => {
   }, [isNavigating]);
 
   return (
-    <div id={id} className={`container w-full h-screen ${className}`}>
+    <div id={id} className={`container w-full ${className}`}>
       {children}
     </div>
   );

@@ -20,16 +20,18 @@ const About = () => {
   return (
     <PageWrapper id="About" className="h-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="section-title">{data.title}</h1>
-        <h2 className="section-subtitle mb-4 lg:mb-6">{data.subtitle}</h2>
+        <h1 data-aos="fade-up" data-aos-duration="800" className="section-title">{data.title}</h1>
+        <h2 data-aos="fade-up" data-aos-duration="1000" className="section-subtitle mb-4 lg:mb-6">{data.subtitle}</h2>
         {data.text.map((e, i) => (
-          <p key={i} className="section-description mb-4">
+          <p data-aos="fade-up" data-aos-duration={1200 + (i * 200)} key={i} className="section-description mb-4">
             {e}
           </p>
         ))}
-        <Button onClick={() => setActiveMenu("Service")} type="secondary" className="flex gap-2 items-center mt-4">
-          My Services
-        </Button>
+        <div data-aos="fade-up" data-aos-duration="1800">
+          <Button onClick={() => setActiveMenu("Service")} type="secondary" className="flex gap-2 items-center mt-4">
+            My Services
+          </Button>
+        </div>
       </div>
     </PageWrapper>
   );

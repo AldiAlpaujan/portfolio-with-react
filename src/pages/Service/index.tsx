@@ -36,7 +36,7 @@ const Service = () => {
   };
 
   return (
-    <PageWrapper id="Service" className="font-inter mt-10 pt-section">
+    <PageWrapper id="Service" className="font-inter h-fit pt-section">
       <div className="flex flex-col items-center justify-center ">
         <h1 className="section-title">{data.title}</h1>
         <h2 className="section-subtitle mb-10 lg:mb-14">{data.subtitle}</h2>

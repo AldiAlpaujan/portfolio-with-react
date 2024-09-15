@@ -33,7 +33,7 @@ const projectData: ProjectModel[] = [
   {
     id: 3,
     image: kbihuImg,
-    title: 'KBIHU Daarul Istiqomah',
+    title: 'KBIHU Daarul Istiqoomah',
     description: 'KBIHU Darulistiqomah is a management app designed to let customers independently register, save, join training programs, and check their estimated departure year.',
     tech: 'Flutter, Dart, Firebase.',
     projectType: ProjectType.MOBILE,

@@ -28,8 +28,7 @@ const HeaderMenuContextProvider = ({ children }: { children: React.ReactNode }) 
     const section = document.getElementById(activeMenu);
     if (section) {
       const rect = section.getBoundingClientRect();
-      const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-      if (isInView) {
+      if (rect.top == 0) {
         setIsNavigating(false);
       }
     }

@@ -3,7 +3,7 @@ export enum ProjectType {
   WEB,
 }
 
-export interface PortfolioModel {
+export interface ProjectModel {
   id: number,
   image: string,
   title: string,

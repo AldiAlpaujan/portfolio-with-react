@@ -1,5 +1,6 @@
-import { PortfolioModel, ProjectType } from "../../models/portfolio.model";
+import { ProjectModel, ProjectType } from "../../models/portfolio.model";
 import balaneKeeperImg from "../../assets/project/balance-keeper.png";
+import balaneKeeperCmsImg from "../../assets/project/balance-keeper-cms.png";
 import kbihuImg from "../../assets/project/kbihu.png";
 import ehyaImg from "../../assets/project/ehya.png";
 import minimarketkuImg from "../../assets/project/minimarketku.png";
@@ -8,7 +9,7 @@ import pdtMaxImg from "../../assets/project/pdt-max.png";
 import rzfCanvasingImg from "../../assets/project/rzf-canvasing.png";
 import rzfRestoImg from "../../assets/project/rzf-resto.png";
 
-const portfolioData: PortfolioModel[] = [
+const projectData: ProjectModel[] = [
   {
     id: 1,
     image: balaneKeeperImg,
@@ -21,7 +22,7 @@ const portfolioData: PortfolioModel[] = [
   },
   {
     id: 2,
-    image: "",
+    image: balaneKeeperCmsImg,
     title: 'Balance Keeper CMS',
     description: 'My web portfolio is a website I created to showcase my skills, expertise, and past projects, aimed at attracting potential clients.',
     tech: 'React js, Typescript, MUI, Express js, Prisma Mysql.',
@@ -63,7 +64,7 @@ const portfolioData: PortfolioModel[] = [
     id: 6,
     image: dbOwnerImg,
     title: 'DB Owner',
-    description: 'DB Owner is a powerful app designed to view and analyze data from internal desktop applications subscribed to company. Simplify your data management and decision-making process.',
+    description: 'DB Owner is a powerful app designed to view and analyze data from internal desktop applications subscribed to company.',
     tech: 'Flutter, Dart.',
     projectType: ProjectType.MOBILE,
     canTouch: true,
@@ -101,7 +102,7 @@ const portfolioData: PortfolioModel[] = [
   },
   {
     id: 10,
-    image: "",
+    image: ehyaImg,
     title: 'My Portfolio',
     description: 'My web portfolio is a website I created to showcase my skills, expertise, and past projects, aimed at attracting potential clients.',
     tech: 'React js, Typescript, Tailwind css.',
@@ -111,4 +112,4 @@ const portfolioData: PortfolioModel[] = [
   },
 ];
 
-export { portfolioData }
+export { projectData as portfolioData }

@@ -3,12 +3,13 @@ import { ReactNode } from "react";
 export interface AppCardProps {
   children: ReactNode,
   className?: string,
+  onClick?: () => void,
 }
 
 const AppCard = (props: AppCardProps) => {
   return (
     <>
-      <div className={`
+      <div onClick={props.onClick} className={`
         bg-gradient-to-br from-white/20 to-white/5 
         dark:bg-gradient-to-br dark:from-white/5 dark:to-white/0
         backdrop-blur-md

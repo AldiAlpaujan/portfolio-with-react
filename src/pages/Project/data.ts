@@ -24,7 +24,7 @@ const projectData: ProjectModel[] = [
     id: 2,
     image: balaneKeeperCmsImg,
     title: 'Balance Keeper CMS',
-    description: 'My web portfolio is a website I created to showcase my skills, expertise, and past projects, aimed at attracting potential clients.',
+    description: 'Balance Keeper CMS is an internal application designed to manage the Balance Keeper app and landing page content, as well as analyze data efficiently.',
     tech: 'React js, Typescript, MUI, Express js, Prisma Mysql.',
     projectType: ProjectType.WEB,
     canTouch: false,

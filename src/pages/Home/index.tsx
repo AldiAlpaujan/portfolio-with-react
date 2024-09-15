@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import homeImg from "../../assets/home-img.png";
+import homeImg from "../../assets/home-img.jpg";
 import Button from "../../components/atom/Button";
 import PageWrapper from "../../components/template/PageWrapper";
 import { HeaderMenuContext } from "../../context/HeaderMenuContext";
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <PageWrapper id="Home" className="font-poppins h-screen relative flex items-center justify-center">
       <div className="absolute px-5 flex flex-col items-center justify-center">
-        <img src={data.image} alt="Home" className="w-[180px] h-[175px] mb-5 md:mb-6 xl:mb-7 2xl:mb-8 2xl:w-[200px] 2xl:h-[195px]" />
+        <img src={data.image} alt="Home" className="w-[180px] h-[175px] rounded-full mb-5 md:mb-6 xl:mb-7 2xl:mb-8 2xl:w-[200px] 2xl:h-[195px]" />
         <h1 className="text-light-title text-3xl font-bold dark:text-dark-title mb-1 md:mb-2 md:text-4xl xl:mb-2 xl:text-5xl">
           {data.title}
         </h1>

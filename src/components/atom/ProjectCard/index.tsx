@@ -4,27 +4,49 @@ import AppCard from "../AppCard";
 import flutterIcon from "../../../assets/tech/flutter.png";
 import reactIcon from "../../../assets/tech/react_js.png";
 
-const ProjectCard = (props: { project: ProjectModel }) => {
+type Props = {
+  project: ProjectModel
+  onClick?: (value: ProjectModel) => void,
+}
+
+const ProjectCard = (props: Props) => {
+
+  return (
+    <AppCard onClick={() => props.onClick?.(props.project)} className="flex flex-col justify-between p-5 rounded-[10px] cursor-pointer dark:text-white group text-left">
+      <Body project={props.project} />
+      <Footer project={props.project} />
+    </AppCard>
+  );
+}
+
+const Body = (props: Props) => {
   const {
     image,
     title,
     description,
+  } = props.project;
+
+  return (
+    <div className="mb-[10px]">
+      <div className="w-full mb-[24px] rounded-[4px] overflow-hidden ">
+        <img src={image} alt="" />
+      </div>
+      <h5 className="mb-[8px] text-xl font-bold text-light-title dark:text-white">{title}</h5>
+      <p className="text-base dark:text-[#E1E1E1]">{description}</p>
+    </div>
+  );
+}
+
+const Footer = (props: Props) => {
+  const {
     tech,
     projectType,
     canTouch
   } = props.project;
 
   const isMobile = projectType === ProjectType.MOBILE;
-
   return (
-    <AppCard className="flex flex-col justify-between p-5 rounded-[10px] cursor-pointer dark:text-white">
-      <div className="mb-[10px]">
-        <div className="w-full h-auto bg-red-500 rounded-[4px] overflow-hidden mb-[24px]">
-          <img src={image} alt="" />
-        </div>
-        <h5 className="mb-[8px] text-xl font-bold text-light-title dark:text-white">{title}</h5>
-        <p className="text-base dark:text-[#E1E1E1]">{description}</p>
-      </div>
+    <>
       <div>
         <p className="mb-5 dark:text-[#CCCCCC]">
           Tech : <span className="text-sm font-light">{tech}</span>
@@ -48,7 +70,7 @@ const ProjectCard = (props: { project: ProjectModel }) => {
           </div>
         </div>
       </div>
-    </AppCard>
+    </>
   );
 }
 

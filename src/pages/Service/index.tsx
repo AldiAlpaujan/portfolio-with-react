@@ -48,7 +48,7 @@ const Service = () => {
         <div className="flex flex-wrap justify-center gap-6 xl:max-w-[1200px]">
           {data.techs.map((value, i) => (
             <AppCard key={i} className="w-32 h-32 sm:w-24 sm:h-24 xl:w-32 xl:h-32 flex items-center justify-center rounded-[10px] group">
-              <img src={value} alt="img" className="w-20 sm:w-16 xl:w-20 saturate-0 group-hover:saturate-100 transition-all duration-300" />
+              <img src={value} alt="img" className="w-20 sm:w-16 xl:w-20 group-hover:saturate-100 transition-all duration-300" />
             </AppCard>
           ))}
         </div>

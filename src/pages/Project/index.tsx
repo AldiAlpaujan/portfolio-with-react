@@ -22,7 +22,11 @@ const Project = () => {
         <h1 className="section-title">{data.title}</h1>
         <h2 className="section-subtitle mb-10 lg:mb-14">{data.subtitle}</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-[1200px] ">
-          {data.projects.map((value) => (<ProjectCard key={value.id} onClick={handleOnClick} project={value} />))}
+          {data.projects.map((value, i) => (
+            <div key={i} data-aos="fade-up" aos-duration={1000} data-aos-delay={(i + 1) * 50}>
+              <ProjectCard onClick={handleOnClick} project={value} />
+            </div>
+          ))}
         </div>
       </div>
     </PageWrapper>

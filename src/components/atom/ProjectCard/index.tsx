@@ -12,7 +12,7 @@ type Props = {
 const ProjectCard = (props: Props) => {
 
   return (
-    <AppCard onClick={() => props.onClick?.(props.project)} className="flex flex-col justify-between p-5 rounded-[10px] cursor-pointer dark:text-white group text-left">
+    <AppCard onClick={() => props.onClick?.(props.project)} className="h-full flex flex-col justify-between p-5 rounded-[10px] cursor-pointer dark:text-white group text-left">
       <Body project={props.project} />
       <Footer project={props.project} />
     </AppCard>

@@ -38,18 +38,22 @@ const Service = () => {
   return (
     <PageWrapper id="Service" className="font-inter h-fit pt-section">
       <div className="flex flex-col items-center justify-center ">
-        <h1 className="section-title">{data.title}</h1>
-        <h2 className="section-subtitle mb-10 lg:mb-14">{data.subtitle}</h2>
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" className="section-title">{data.title}</h1>
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" className="section-subtitle mb-10 lg:mb-14">{data.subtitle}</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-[1200px] mb-6">
           {data.services.map((value, i) => (
-            <ServiceCard key={i} service={value} />
+            <div key={i} data-aos="fade-up" data-aos-duration={1000} data-aos-delay={(i + 1) * 100}>
+              <ServiceCard service={value} />
+            </div>
           ))}
         </div>
         <div className="flex flex-wrap justify-center gap-6 xl:max-w-[1200px]">
           {data.techs.map((value, i) => (
-            <AppCard key={i} className="w-32 h-32 sm:w-24 sm:h-24 xl:w-32 xl:h-32 flex items-center justify-center rounded-[10px] group">
-              <img src={value} alt="img" className="w-20 sm:w-16 xl:w-20 group-hover:saturate-100 transition-all duration-300" />
-            </AppCard>
+            <div key={i} data-aos="fade-up" aos-duration={1000} data-aos-delay={(i + 1) * 100}>
+              <AppCard className="w-32 h-32 sm:w-24 sm:h-24 xl:w-32 xl:h-32 flex items-center justify-center rounded-[10px] group">
+                <img src={value} alt="img" className="w-20 sm:w-16 xl:w-20 group-hover:saturate-100 transition-all duration-300" />
+              </AppCard>
+            </div>
           ))}
         </div>
       </div>

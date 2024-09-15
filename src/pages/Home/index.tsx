@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import homeImg from "../../assets/home-img.jpg";
+import homeImg from "../../assets/home-img.png";
 import Button from "../../components/atom/Button";
 import PageWrapper from "../../components/template/PageWrapper";
 import { HeaderMenuContext } from "../../context/HeaderMenuContext";
@@ -17,17 +17,17 @@ const Home = () => {
   return (
     <PageWrapper id="Home" className="font-poppins h-screen relative flex items-center justify-center">
       <div className="absolute px-5 flex flex-col items-center justify-center">
-        <img data-aos="fade-up" data-aos-duration="500" src={data.image} alt="Home" className="size-[150px] rounded-full mb-5 md:mb-6 xl:mb-7 2xl:mb-8 2xl:w-[200px] 2xl:h-[195px]" />
-        <h1 data-aos="fade-up" data-aos-duration="700" className="text-light-title text-3xl font-bold dark:text-dark-title mb-1 md:mb-2 md:text-4xl xl:mb-2 xl:text-5xl">
+        <img data-aos="fade-up" data-aos-duration="1500" src={data.image} alt="Home" className="size-[150px] rounded-full mb-5 md:mb-6 xl:mb-7 2xl:mb-8 2xl:w-[200px] 2xl:h-[195px]" />
+        <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" className="text-light-title text-3xl font-bold dark:text-dark-title mb-1 md:mb-2 md:text-4xl xl:mb-2 xl:text-5xl">
           {data.title}
         </h1>
-        <h2 data-aos="fade-up" data-aos-duration="900" className="text-xl text-gradient font-semibold mb-4 md:text-2xl xl:mb-5 xl:text-3xl 2xl:mb-6">
+        <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" className="text-xl text-gradient font-semibold mb-4 md:text-2xl xl:mb-5 xl:text-3xl 2xl:mb-6">
           {data.subtitle}
         </h2>
-        <p data-aos="fade-up" data-aos-duration="1100" className="max-w-2xl text-base font-medium text-center mb-8 text-light-body dark:text-dark-body md:text-lg md:max-w-3xl lg:max-w-4xl xl:text-xl xl:mb-9">
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" className="max-w-2xl text-base font-medium text-center mb-8 text-light-body dark:text-dark-body md:text-lg md:max-w-3xl lg:max-w-4xl xl:text-xl xl:mb-9">
           {data.description}
         </p>
-        <div data-aos="fade-up" data-aos-duration="1300">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
           <Button onClick={() => setActiveMenu("About")} type="secondary" className="flex gap-2 items-center">
             More About Me
           </Button>

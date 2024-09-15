@@ -1,4 +1,5 @@
 import { ProjectModel, ProjectType } from "../../models/portfolio.model";
+import portfolioImg from "../../assets/project/portfolio.png";
 import balaneKeeperImg from "../../assets/project/balance-keeper.png";
 import balaneKeeperCmsImg from "../../assets/project/balance-keeper-cms.png";
 import kbihuImg from "../../assets/project/kbihu.png";
@@ -12,6 +13,16 @@ import rzfRestoImg from "../../assets/project/rzf-resto.png";
 const projectData: ProjectModel[] = [
   {
     id: 1,
+    image: portfolioImg,
+    title: 'My Portfolio',
+    description: 'My web portfolio is a website I created to showcase my skills, expertise, and past projects, aimed at attracting potential clients.',
+    tech: 'React js, Typescript, Tailwind css.',
+    projectType: ProjectType.WEB,
+    canTouch: true,
+    link: "",
+  },
+  {
+    id: 2,
     image: balaneKeeperImg,
     title: 'Balance Keeper Application',
     description: 'Balance Keeper is a personal finance app designed to track your expenses and manage your assets with ease. Stay in control of your financial health effortlessly.',
@@ -21,7 +32,7 @@ const projectData: ProjectModel[] = [
     link: "",
   },
   {
-    id: 2,
+    id: 3,
     image: balaneKeeperCmsImg,
     title: 'Balance Keeper CMS',
     description: 'Balance Keeper CMS is an internal application designed to manage the Balance Keeper app and landing page content, as well as analyze data efficiently.',
@@ -31,7 +42,7 @@ const projectData: ProjectModel[] = [
     link: "",
   },
   {
-    id: 3,
+    id: 4,
     image: kbihuImg,
     title: 'KBIHU Daarul Istiqoomah',
     description: 'KBIHU Darulistiqomah is a management app designed to let customers independently register, save, join training programs, and check their estimated departure year.',
@@ -41,7 +52,7 @@ const projectData: ProjectModel[] = [
     link: "https://play.google.com/store/apps/details?id=com.di.kbihu&pcampaignid=web_share",
   },
   {
-    id: 4,
+    id: 5,
     image: ehyaImg,
     title: 'Ehya Blog',
     description: "Ehya Blog is a personal blog website I created to enhance and sharpen my React.js skills. It's a space where practice meets creativity.",
@@ -51,7 +62,7 @@ const projectData: ProjectModel[] = [
     link: "https://clone-ehya-blog-react.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: minimarketkuImg,
     title: 'Minimarketku',
     description: 'Minimarketku is an e-commerce app project that offers the convenience of purchasing items from home without the need to visit the main store.',
@@ -61,7 +72,7 @@ const projectData: ProjectModel[] = [
     link: "",
   },
   {
-    id: 6,
+    id: 7,
     image: dbOwnerImg,
     title: 'DB Owner',
     description: 'DB Owner is a powerful app designed to view and analyze data from internal desktop applications subscribed to company.',
@@ -71,7 +82,7 @@ const projectData: ProjectModel[] = [
     link: "https://play.google.com/store/apps/details?id=com.rzfsoftware.dashboard_owner&pcampaignid=web_share",
   },
   {
-    id: 7,
+    id: 8,
     image: pdtMaxImg,
     title: 'PDT Max',
     description: "PDT Max is a stock-taking and management app for retail stores, featuring seamless integration with the company's desktop application.",
@@ -81,7 +92,7 @@ const projectData: ProjectModel[] = [
     link: "https://play.google.com/store/apps/details?id=com.rzfsoftware.pdt_mobile&pcampaignid=web_share",
   },
   {
-    id: 8,
+    id: 9,
     image: rzfCanvasingImg,
     title: 'RZF Canvasing',
     description: "RZF Canvasing is a sales support app designed to assist salespeople and cashiers in making transactions outside the store, seamlessly connected to the company's desktop application.",
@@ -91,7 +102,7 @@ const projectData: ProjectModel[] = [
     link: "",
   },
   {
-    id: 9,
+    id: 10,
     image: rzfRestoImg,
     title: 'RZF Resto',
     description: 'RZF Resto is a POS app specifically designed for restaurants and cafes, seamlessly connected to a web application for streamlined management.',
@@ -100,16 +111,7 @@ const projectData: ProjectModel[] = [
     canTouch: false,
     link: "",
   },
-  {
-    id: 10,
-    image: ehyaImg,
-    title: 'My Portfolio',
-    description: 'My web portfolio is a website I created to showcase my skills, expertise, and past projects, aimed at attracting potential clients.',
-    tech: 'React js, Typescript, Tailwind css.',
-    projectType: ProjectType.WEB,
-    canTouch: true,
-    link: "",
-  },
+
 ];
 
 export { projectData as portfolioData }

@@ -4,7 +4,7 @@ import { ServiceModel } from "../../../models/service.model";
 const ServiceCard = (props: { service: ServiceModel }) => {
   const { icon, title, description } = props.service;
   return (
-    <AppCard className="px-[19px] py-8 rounded-[10px] max-w-sm">
+    <AppCard className="h-full px-[19px] py-8 rounded-[10px] max-w-sm">
       <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-xl mb-5 dark:bg-white transition-all duration-150">
         <i className={`${icon} text-3xl text-white dark:text-[#3A3A3A] transition-all duration-150`} />
       </div>

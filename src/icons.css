@@ -27,6 +27,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-email:before {
+  content: "\e913";
+}
 .ic-global:before {
   content: "\e911";
 }

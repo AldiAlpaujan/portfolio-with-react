@@ -7,7 +7,7 @@ interface ProviderValue {
 
 const ThemeContext = createContext<ProviderValue | null>(null);
 const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   // useEffect(() => {
   //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {

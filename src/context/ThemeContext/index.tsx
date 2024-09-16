@@ -7,13 +7,25 @@ interface ProviderValue {
 
 const ThemeContext = createContext<ProviderValue | null>(null);
 const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, _setTheme] = useState<"light" | "dark">("light");
+
+  const setTheme = (value: "light" | "dark") => {
+    _setTheme(value);
+    localStorage.setItem("theme", value);
+  }
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      _setTheme(theme as "light" | "dark");
     } else {
-      setTheme("light");
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        setTheme("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        setTheme("light");
+        localStorage.setItem("theme", "light");
+      }
     }
   }, []);
 

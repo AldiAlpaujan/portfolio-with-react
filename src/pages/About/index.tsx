@@ -10,7 +10,7 @@ const About = () => {
     title: "About Me",
     subtitle: "Get to know me",
     text: [
-      "Hi there! I'm Aldi Muhamad Alpaujan, a dedicated software developer with a strong focus on mobile app development. My passion lies in creating innovative mobile applications that offer seamless user experiences.",
+      "Hi there! I'm Aldi Muhamad Alpaujan, a dedicated software developer with a strong focus on mobile app development. My passion lies in creating innovative mobile applications that offer seamless user experiences. I have been working as a mobile developer for approximately 2 years, from an intern to a full-time employee, and continue to grow in this field.",
       "Beyond mobile development, I'am also skilled in building responsive web applications using React and developing powerful backend systems with Express. This combination allows me to provide full-stack solutions that meet your project needs.",
       "Based in Kuningan, West Java, Indonesia, I'am ready to take on new challenges and collaborate with teams worldwide. Whether you're looking for a well-crafted mobile app, a dynamic web application, or a reliable backend system, I'm here to help turn your ideas into reality.",
     ],

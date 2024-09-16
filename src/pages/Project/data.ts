@@ -19,7 +19,7 @@ const projectData: ProjectModel[] = [
     tech: 'React js, Typescript, Tailwind css.',
     projectType: ProjectType.WEB,
     canTouch: true,
-    link: "",
+    link: "https://aldi-portfolio.vercel.app/",
   },
   {
     id: 2,

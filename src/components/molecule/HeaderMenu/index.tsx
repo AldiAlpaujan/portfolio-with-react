@@ -5,6 +5,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import { HeaderMenuContext } from "../../../context/HeaderMenuContext";
 import Button from "../../atom/Button";
 import ToggleThemeMode from "../../atom/ToggleThemeMode";
+import { Func } from "../../../utils/function";
 
 interface HeaderMenuProps {
   type: "mobile" | "desktop",
@@ -100,7 +101,7 @@ const Mobile = () => {
           opacity: actionOpacity,
           transitionDelay: `${getDelay()}ms`,
         }} />
-      <Button className="ease-in-out transition-all duration-500" type="mobile-menu-button" style={{
+      <Button onClick={Func.downloadCv} className="ease-in-out transition-all duration-500" type="mobile-menu-button" style={{
         position: "relative",
         top: `${top}px`,
         opacity: actionOpacity,

@@ -1,11 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useRef } from "react";
 import { BurgerMenuContext } from "../../../context/BurgerMenuContext";
+import { HeaderMenuContext } from "../../../context/HeaderMenuContext";
 import "./index.css";
 
 const HeaderLogo = () => {
   const h1Ref = useRef<HTMLHeadingElement>(null);
   const { isOpen } = useContext(BurgerMenuContext)!;
+  const { setActiveMenu } = useContext(HeaderMenuContext)!;
   const logo = "<A.M.A/>";
 
   useEffect(() => {
@@ -23,7 +25,7 @@ const HeaderLogo = () => {
   }, [isOpen]);
 
   return (
-    <div className="w-[229px] flex flex-col items-start">
+    <div onClick={() => setActiveMenu("Home")} className="w-[229px] flex flex-col items-start">
       <h1 ref={h1Ref} className="lg:hidden logo transition-all duration-300">
         {logo}
       </h1>

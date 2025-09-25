@@ -7,12 +7,12 @@ interface ProviderValue {
 
 const ThemeContext = createContext<ProviderValue | null>(null);
 const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, _setTheme] = useState<"light" | "dark">("light");
+  const [theme, _setTheme] = useState<"light" | "dark">("dark");
 
   const setTheme = (value: "light" | "dark") => {
     _setTheme(value);
     localStorage.setItem("theme", value);
-  }
+  };
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
@@ -42,7 +42,7 @@ const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
       {children}
     </ThemeContext.Provider>
   );
-}
+};
 
 export { ThemeContext };
 export default ThemeContextProvider;

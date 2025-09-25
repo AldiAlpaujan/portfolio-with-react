@@ -4,12 +4,11 @@ export enum ProjectType {
 }
 
 export interface ProjectModel {
-  id: number,
-  image: string,
-  title: string,
-  description: string,
-  tech: string,
-  projectType: ProjectType,
-  canTouch: boolean,
-  link: string,
+  image: string;
+  title: string;
+  description: string;
+  tech: string;
+  projectType: ProjectType;
+  canTouch: boolean;
+  link: string;
 }
